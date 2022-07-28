@@ -2,12 +2,9 @@ package practiceproject5;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-
 public class main {
-
 	static ArrayList<Integer> expenses = new ArrayList<Integer>();
 	static Scanner sc = new Scanner(System.in);
-
 	public static void main(String[] args) {
 		expenses.add(1000);
 		expenses.add(2300);
@@ -63,7 +60,6 @@ public class main {
 		}
 
 	}
-
 	private static void showExpenses() {
 		if(expenses.size()==0) {
 			System.out.println("No expense found");
@@ -74,7 +70,7 @@ public class main {
 			System.out.println(i + 1 + ") " + expenses.get(i));
 		}
 		System.out.println();
-	}// end of showExpense
+	}
 
 	private static void addExpense(int expenseToBeAdded) {
 		expenses.add(expenseToBeAdded);
@@ -95,16 +91,14 @@ public class main {
 		} else {
 			System.out.println("Oops... try again!");
 		}
-	}// end of deleteAllExpense
+	}
 
 	private static void closeApp() {
 		System.out.println("Closing your application... \nThank you!");
 		System.exit(0);
-	}// end of closeApp
-
+	}
 	private static void searchExpenses(ArrayList<Integer> arrayList) {
 		System.out.print("Enter the value: ");
-		// Complete the method
 		int key=sc.nextInt();
 		boolean found=false;
 		int index=0;
